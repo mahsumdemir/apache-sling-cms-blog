@@ -6,7 +6,6 @@ ui/target
 core/target
 ui/src/main/frontend/node
 ui/src/main/frontend/node_modules
-ui/src/main/frontend/package-lock.json
 ui/src/main/resources/inital-content/static/clientlibs/blog
 
 
