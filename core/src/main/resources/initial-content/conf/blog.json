@@ -1,0 +1,50 @@
+{
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Blog"
+  },
+  "site": {
+    "jcr:primaryType": "sling:Config",
+    "sling:resourceType": "sling-cms/components/cms/siteconfig",
+    "jcr:title": "Blog configuration",
+    "templates": {
+      "blog-post": {
+        "jcr:title": "Blog post page template",
+        "template": "{\r\n  \"jcr:primaryType\": \"sling:Page\",\r\n  \"jcr:content\": {\r\n    \"jcr:primaryType\": \"nt:unstructured\",\r\n    \"jcr:title\": \"{{title}}\",\r\n    \"sling:template\": \"/conf/blog/site/templates/blog-post\",\r\n    \"sling:resourceType\": \"blog/pages/blog-post\",\r\n    \"published\": false\r\n  }\r\n}",
+        "allowedPaths": [
+          "/content/blog/blog-mahsumdemir-com.*"
+        ],
+        "availableComponentTypes": [
+          "General"
+        ],
+        "sling:resourceType": "sling-cms/components/cms/pagetemplate",
+        "fields": {
+          "jcr:primaryType": "nt:unstructured",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "required": true,
+            "name": "title",
+            "type": "text",
+            "label": "Title",
+            "sling:resourceType": "sling-cms/components/editor/fields/text"
+          },
+          "name": {
+            "jcr:primaryType": "nt:unstructured",
+            "required": true,
+            "name": ":name",
+            "type": "text",
+            "label": "Name",
+            "sling:resourceType": "sling-cms/components/editor/fields/text"
+          }
+        },
+        "componentConfigurations": {
+          "ctaComponentConfig": {
+            "sling:resourceType": "sling-cms/components/cms/componentconfig",
+            "type": "reference/components/general/cta",
+            "ctaClasses": "Information=info,Warning=warn"
+          }
+        }
+      }
+    }
+  }
+}
