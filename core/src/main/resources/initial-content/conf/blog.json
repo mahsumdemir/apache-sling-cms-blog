@@ -15,7 +15,8 @@
           "/content/blog/blog-mahsumdemir-com.*"
         ],
         "availableComponentTypes": [
-          "General"
+          "General",
+          "Blog"
         ],
         "sling:resourceType": "sling-cms/components/cms/pagetemplate",
         "fields": {
