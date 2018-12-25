@@ -30,6 +30,10 @@
           "yes": {
             "label": "Yes",
             "value": "true"
+          },
+          "no": {
+            "label": "No",
+            "value": "False"
           }
         }
       }
