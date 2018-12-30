@@ -1,3 +1,21 @@
-h1 {
-  font-size: 10px;
+body {
+  margin: 0;
+}
+
+.blog-header {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+
+  .title {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    padding: 0 10%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+
+  }
 }
