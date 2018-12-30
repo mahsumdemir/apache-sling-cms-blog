@@ -10,7 +10,21 @@
     "templates": {
       "blog-post": {
         "jcr:title": "Blog post page template",
-        "template": "{\r\n  \"jcr:primaryType\": \"sling:Page\",\r\n  \"jcr:content\": {\r\n    \"jcr:primaryType\": \"nt:unstructured\",\r\n    \"jcr:title\": \"{{title}}\",\r\n    \"sling:template\": \"/conf/blog/site/templates/blog-post\",\r\n    \"sling:resourceType\": \"blog/pages/blog-post\",\r\n    \"published\": false\r\n  }\r\n}",
+        "template": {
+          "jcr:primaryType": "sling:Page",
+          "jcr:content": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:title": "{{title}}",
+            "sling:template": "/conf/blog/site/templates/blog-post",
+            "sling:resourceType": "blog/pages/blog-post",
+            "published": false,
+            "container": {
+              "blog_post_header": {
+                "sling:resourceType": "blog/components/blog-header"
+              }
+            }
+          }
+        },
         "allowedPaths": [
           "/content/blog/blog-mahsumdemir-com.*"
         ],
