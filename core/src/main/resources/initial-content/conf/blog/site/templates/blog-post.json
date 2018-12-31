@@ -1,0 +1,18 @@
+{
+  "sling:resourceType": "sling-cms/components/cms/pagetemplate",
+  "jcr:title": "Blog post page template",
+  "allowedPaths": [
+    "/content/blog/blog-mahsumdemir-com.*"
+  ],
+  "availableComponentTypes": [
+    "General",
+    "Blog"
+  ],
+  "componentConfigurations": {
+    "ctaComponentConfig": {
+      "sling:resourceType": "sling-cms/components/cms/componentconfig",
+      "type": "reference/components/general/cta",
+      "ctaClasses": "Information=info,Warning=warn"
+    }
+  }
+}

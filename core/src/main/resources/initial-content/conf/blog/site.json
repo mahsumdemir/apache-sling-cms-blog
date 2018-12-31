@@ -1,0 +1,5 @@
+{
+  "jcr:primaryType": "sling:Config",
+  "sling:resourceType": "sling-cms/components/cms/siteconfig",
+  "jcr:title": "Blog configuration"
+}

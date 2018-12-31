@@ -167,7 +167,6 @@
                         </Sling-Model-Packages>
                         <Sling-Initial-Content>
                             initial-content/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,
-                            initial-content/conf/blog.json;overwrite:=true;uninstall:=true;path:=/conf,
                             initial-content/conf/blog;overwrite:=true;uninstall:=true;path:=/conf/blog
                         </Sling-Initial-Content>
                     </instructions>

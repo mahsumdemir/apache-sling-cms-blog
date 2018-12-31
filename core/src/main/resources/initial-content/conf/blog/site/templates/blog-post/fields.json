@@ -1,0 +1,33 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "text": {
+    "jcr:primaryType": "nt:unstructured",
+    "required": true,
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "sling:resourceType": "sling-cms/components/editor/fields/text"
+  },
+  "name": {
+    "jcr:primaryType": "nt:unstructured",
+    "required": true,
+    "name": ":name",
+    "type": "text",
+    "label": "Name",
+    "sling:resourceType": "sling-cms/components/editor/fields/text"
+  },
+  "backgroundImage": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/path",
+    "basePath": "/static/blog/images",
+    "type": "file",
+    "label": "Background Image",
+    "name": "backgroundImage",
+    "required": true
+  },
+  "title": {
+    "sling:resourceType": "sling-cms/components/editor/fields/text",
+    "label": "Title",
+    "name": "title"
+  }
+}

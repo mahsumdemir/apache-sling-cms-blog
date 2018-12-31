@@ -1,0 +1,10 @@
+{
+  "jcr:primaryType": "sling:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "{{title}}",
+    "sling:template": "/conf/blog/site/templates/blog-post",
+    "sling:resourceType": "blog/pages/blog-post",
+    "published": false
+  }
+}
