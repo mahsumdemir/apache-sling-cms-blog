@@ -2,20 +2,34 @@ body {
   margin: 0;
 }
 
-.blog-header {
-  height: 75vh;
-  width: 100%;
-  position: relative;
+.blog-post {
+  font-family: 'Roboto', sans-serif;
 
-  .title {
-    text-align: center;
-    position: absolute;
-    bottom: 10%;
+  .blog-header {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+
+    .title {
+      text-align: center;
+      position: absolute;
+      bottom: 40%;
+      width: 80%;
+      padding: 0 10%;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 50px;
+    }
+  }
+
+  .blog-content {
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     width: 80%;
-    padding: 0 10%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-style: italic;
-
+    margin-top: -15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    padding: 1%;
   }
 }
