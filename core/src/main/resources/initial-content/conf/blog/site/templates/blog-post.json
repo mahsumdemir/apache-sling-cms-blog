@@ -14,5 +14,6 @@
       "type": "reference/components/general/cta",
       "ctaClasses": "Information=info,Warning=warn"
     }
-  }
+  },
+  "template": "{\r\n  \"jcr:primaryType\": \"sling:Page\",\r\n  \"jcr:content\": {\r\n    \"jcr:primaryType\": \"nt:unstructured\",\r\n    \"jcr:title\": \"{{title}}\",\r\n    \"sling:template\": \"/conf/blog/site/templates/blog-post\",\r\n    \"sling:resourceType\": \"blog/pages/blog-post\",\r\n    \"published\": false\r\n  }\r\n}"
 }
