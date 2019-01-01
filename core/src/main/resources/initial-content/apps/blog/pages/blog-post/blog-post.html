@@ -18,11 +18,11 @@
     <body class="blog-post" data-page-template="blog-post">
         <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/init.jsp'}"/>
 
-        <div class="blog-header" style="background-image: url('${properties.backgroundImage @ context='uri'}')">
-            <h1 class="title">
-                ${properties.title}
-            </h1>
-        </div>
+        <div class="background-image" style="background-image: url('${properties.backgroundImage @ context='uri'}')"/>
+
+        <h1 class="title">
+            ${properties.title}
+        </h1>
 
         <div class="blog-content">
             <sly data-sly-resource="${'container' @ resourceType = 'sling-cms/components/general/container'}"/>
