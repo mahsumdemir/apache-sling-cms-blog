@@ -13,5 +13,10 @@
         <module>ui</module>
     </modules>
 
+    <properties>
+        <sling.url>http://localhost:8080</sling.url>
+        <sling.user>admin</sling.user>
+        <sling.password>admin</sling.password>
+    </properties>
 
 </project>

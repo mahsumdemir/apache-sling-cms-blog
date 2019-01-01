@@ -1,6 +1,6 @@
 {
   "jcr:primaryType": "nt:unstructured",
-  "text": {
+  "title": {
     "jcr:primaryType": "nt:unstructured",
     "required": true,
     "name": "title",
@@ -24,10 +24,5 @@
     "label": "Background Image",
     "name": "backgroundImage",
     "required": true
-  },
-  "title": {
-    "sling:resourceType": "sling-cms/components/editor/fields/text",
-    "label": "Title",
-    "name": "title"
   }
 }
