@@ -1,0 +1,5 @@
+{
+  "jcr:primaryType" : "sling:Component",
+  "jcr:title": "Rich text editor",
+  "componentType": "Blog"
+}

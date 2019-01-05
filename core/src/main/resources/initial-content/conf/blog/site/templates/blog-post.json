@@ -5,7 +5,6 @@
     "/content/blog/blog-mahsumdemir-com.*"
   ],
   "availableComponentTypes": [
-    "General",
     "Blog"
   ],
   "componentConfigurations": {

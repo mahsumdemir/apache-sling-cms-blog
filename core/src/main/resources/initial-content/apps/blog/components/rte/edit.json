@@ -1,0 +1,13 @@
+{
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "sling:resourceType": "sling-cms/components/general/container",
+    "text": {
+      "label": "Text editor",
+      "name": "text",
+      "required": true,
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext",
+      "toolbar": "/conf/blog/components/rte/toolbar"
+    }
+  }
+}

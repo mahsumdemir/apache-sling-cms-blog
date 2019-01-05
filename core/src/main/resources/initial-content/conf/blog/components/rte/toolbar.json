@@ -1,0 +1,203 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar",
+  "primary": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttonbar",
+    "basic": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "bold": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "bold",
+        "command": "bold",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "italic": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "italic",
+        "command": "italic",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "underline": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "underline",
+        "command": "underline",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    },
+    "paragraph": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "&#182;",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/optionbutton"
+    },
+    "alignment": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "alignleft": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "align-left",
+        "command": "alignLeftStyle",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "aligncenter": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "align-center",
+        "command": "alignCenterStyle",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "alignright": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "align-right",
+        "command": "alignRightStyle",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    },
+    "lists": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "unorderedlist": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "unordered-list",
+        "command": "insertUnorderedList",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "orderedlist": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "ordered-list",
+        "command": "insertOrderedList",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    },
+    "indentation": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "indent": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "indent",
+        "command": "indentList",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "outdent": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "unindent",
+        "command": "outdentList",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    }
+  },
+  "secondary": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttonbar",
+    "links": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "link": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "link",
+        "command": "createLink",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "unlink": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "close",
+        "command": "removeLink",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    },
+    "image": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "picture",
+      "command": "insertImage",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "undo": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/buttongroup",
+      "undo": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "undo",
+        "command": "undo",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      },
+      "redo": {
+        "jcr:primaryType": "nt:unstructured",
+        "icon": "redo",
+        "command": "redo",
+        "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+      }
+    },
+    "source": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/viewsource"
+    }
+  },
+  "createlink": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/createlink"
+  },
+  "insertimage": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/insertimage"
+  },
+  "textoptions": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/textoptions",
+    "paragraph": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "&#182;",
+      "value": "p",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "h1": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "header-1",
+      "value": "h1",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "h2": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "header-2",
+      "value": "h2",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "h3": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "header-3",
+      "value": "h3",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "h4": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "header-4",
+      "value": "h4",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "h5": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "header-5",
+      "value": "h5",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "pre": {
+      "jcr:primaryType": "nt:unstructured",
+      "icon": "terminal",
+      "value": "pre",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    },
+    "quote": {
+      "jcr:primaryType": "nt:unstructured",
+      "text": "&#8221;",
+      "value": "blockquote",
+      "command": "formatBlock",
+      "sling:resourceType": "sling-cms/components/editor/fields/richtext/toolbar/button"
+    }
+  }
+}
