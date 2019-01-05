@@ -10,6 +10,12 @@
       "required": "true",
       "sling:resourceType": "sling-cms/components/editor/fields/text"
     },
+    "titleColour": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Title Colour",
+      "name": "titleColour",
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
+    },
     "backgroundImage": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "sling-cms/components/editor/fields/path",
