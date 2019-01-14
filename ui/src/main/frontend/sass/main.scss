@@ -1,37 +1,6 @@
+@import "blog-post";
+@import "home";
+
 body {
   margin: 0;
-}
-
-.blog-post {
-  font-family: 'Roboto', sans-serif;
-
-  .background-image {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .title {
-    text-align: center;
-    position: relative;
-    margin-top: 10%;
-    width: 80%;
-    padding: 0 10%;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 50px;
-  }
-
-  .blog-content {
-    position: relative;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    width: 80%;
-    margin: 10% 10% 4%;
-    background-color: white;
-    padding: 1%;
-  }
 }

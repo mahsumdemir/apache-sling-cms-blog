@@ -1,0 +1,14 @@
+{
+  "button": "Save Page",
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "title": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Title",
+      "name": "title",
+      "required": "true",
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
+    }
+  }
+}

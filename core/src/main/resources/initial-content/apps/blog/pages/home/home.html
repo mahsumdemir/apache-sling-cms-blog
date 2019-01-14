@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>${properties.title}</title>
+
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="/static/clientlibs/blog/main.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body class="home" data-page-template="home">
+        <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/init.jsp'}"/>
+
+        <sly data-sly-use.controller="com.mahsumdemir.sling.blog.HomePageController" data-sly-list="${controller.blogPosts}">
+            <div class="blog-post-card">
+                <img class="background-image" src="${item.backgroundImage}"/>
+                <a class="title" href="${item.pageUrl}">
+                    <span>${item.title}</span>
+                </a>
+            </div>
+        </sly>
+
+        <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/finalize.jsp'}"/>
+    </body>
+</html>

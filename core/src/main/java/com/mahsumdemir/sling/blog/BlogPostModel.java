@@ -1,26 +1,40 @@
 package com.mahsumdemir.sling.blog;
 
-import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
-@Model(adaptables = {SlingHttpServletRequest.class, SlingHttpServletResponse.class} )
+@Model(adaptables = Resource.class )
 public class BlogPostModel {
-
-    private SlingHttpServletRequest request;
-    private SlingHttpServletResponse response;
+    @Inject
+    private Boolean published;
 
     @Inject
-    public BlogPostModel(SlingHttpServletRequest request, SlingHttpServletResponse response) {
-        this.request = request;
-        this.response = response;
+    private String title;
+
+    @Inject
+    private String backgroundImage;
+
+    private String pageUrl;
+
+    public Boolean getPublished() {
+        return published;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
-    @PostConstruct
-    public void postConstruct() {
+    public String getBackgroundImage() {
+        return backgroundImage;
+    }
+
+    public void setUrl(String pageUrl) {
+        this.pageUrl = pageUrl;
+    }
+
+    public String getPageUrl(){
+        return pageUrl;
     }
 }

@@ -1,0 +1,10 @@
+{
+  "sling:resourceType": "sling-cms/components/cms/pagetemplate",
+  "jcr:title": "Blog home page template",
+  "allowedPaths": [
+    "/content/blog/blog-mahsumdemir-com.*"
+  ],
+  "availableComponentTypes": [
+  ],
+  "template": "{\r\n  \"jcr:primaryType\": \"sling:Page\",\r\n  \"jcr:content\": {\r\n    \"jcr:primaryType\": \"nt:unstructured\",\r\n    \"title\": \"{{title}}\",\r\n    \"sling:template\": \"/conf/blog/site/templates/home\",\r\n    \"sling:resourceType\": \"blog/pages/home\",\r\n    \"published\": false\r\n}\r\n}"
+}
