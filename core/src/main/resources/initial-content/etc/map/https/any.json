@@ -1,0 +1,8 @@
+{
+  "jcr:primaryType": "sling:Mapping",
+  "redirect": {
+    "jcr:primaryType": "sling:Mapping",
+    "sling:internalRedirect": "[/]",
+    "sling:match": "/"
+  }
+}
