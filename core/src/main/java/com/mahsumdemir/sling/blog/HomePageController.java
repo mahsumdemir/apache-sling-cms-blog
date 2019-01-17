@@ -4,6 +4,8 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -13,6 +15,7 @@ import java.util.List;
 
 @Model(adaptables = {SlingHttpServletRequest.class, SlingHttpServletResponse.class} )
 public class HomePageController {
+    private static final Logger LOG = LoggerFactory.getLogger(HomePageController.class);
 
     private final SlingHttpServletRequest request;
     private final SlingHttpServletResponse response;

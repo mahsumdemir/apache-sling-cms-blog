@@ -182,8 +182,7 @@
                         <Sling-Initial-Content>
                             initial-content/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,
                             initial-content/conf/blog;overwrite:=true;uninstall:=true;path:=/conf/blog,
-                            initial-content/etc/map/http/blog.mahsumdemir.com.json;overwrite:=true;uninstall:=true;path:=/etc/map/http,
-                            initial-content/etc/map/https/blog.mahsumdemir.com.json;overwrite:=true;uninstall:=true;path:=/etc/map/https
+                            initial-content/etc/map/http/blog.mahsumdemir.com.json;overwrite:=true;uninstall:=true;path:=/etc/map/http
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>

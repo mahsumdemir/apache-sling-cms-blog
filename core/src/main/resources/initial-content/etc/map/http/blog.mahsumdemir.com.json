@@ -1,8 +1,18 @@
 {
-  "jcr:primaryType": "sling:Mapping",
-  "redirect": {
-    "jcr:primaryType": "sling:Mapping",
-    "sling:internalRedirect": "[/]",
-    "sling:match": "/content/blog/blog-mahsumdemir-com/"
+  "jcr:createdBy": "admin",
+  "externalization": {
+    "jcr:createdBy": "admin",
+    "sling:match": "",
+    "sling:internalRedirect": "/content/blog/blog-mahsumdemir-com/"
+  },
+  "home": {
+    "jcr:createdBy": "admin",
+    "sling:match": "$",
+    "sling:internalRedirect": "/content/blog/blog-mahsumdemir-com/home.html"
+  },
+  "static": {
+    "jcr:createdBy": "admin",
+    "sling:match": "static/clientlibs/blog/",
+    "sling:internalRedirect": "/static/clientlibs/blog/"
   }
 }
