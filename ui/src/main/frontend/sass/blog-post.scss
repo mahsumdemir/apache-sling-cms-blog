@@ -1,6 +1,10 @@
 .blog-post {
   font-family: 'Roboto', sans-serif;
 
+  .prettyprint {
+    overflow: hidden;
+  }
+
   .background-image {
     top: 0;
     bottom: 0;
