@@ -1,0 +1,8 @@
+<!--
+ CDATA is needed because underlying HTML parser converts escaped HTML characters back to normal html
+
+ e.g &lt; gets converted to < by HTML parser then browser does not renders it as '<'
+-->
+<pre class="prettyprint lang-${properties.language}">
+<![CDATA[${properties.code}]]>
+</pre>

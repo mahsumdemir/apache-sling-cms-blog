@@ -1,0 +1,17 @@
+{
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "sling:resourceType": "sling-cms/components/general/container",
+    "language": {
+      "label": "Language",
+      "name": "language",
+      "required": true,
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
+    },
+    "code": {
+      "label": "Code",
+      "name": "code",
+      "sling:resourceType": "sling-cms/components/editor/fields/textarea"
+    }
+  }
+}
