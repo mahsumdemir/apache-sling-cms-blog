@@ -2,7 +2,13 @@
   font-family: 'Roboto', sans-serif;
 
   .prettyprint {
-    overflow: hidden;
+    overflow: scroll;
+    white-space: pre;
+    box-sizing: border-box;
+
+    .linenums li {
+      list-style-type: decimal;
+    }
   }
 
   .background-image {
