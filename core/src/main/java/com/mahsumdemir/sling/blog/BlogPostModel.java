@@ -37,4 +37,8 @@ public class BlogPostModel {
     public String getPageUrl(){
         return pageUrl;
     }
+
+    public boolean isPublished(){
+        return published;
+    }
 }

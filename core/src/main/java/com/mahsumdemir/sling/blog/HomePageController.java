@@ -12,6 +12,7 @@ import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Model(adaptables = {SlingHttpServletRequest.class, SlingHttpServletResponse.class} )
 public class HomePageController {
@@ -36,7 +37,7 @@ public class HomePageController {
         String sitePath = getSitePath(request.getResource());
 
         if (StringUtils.isEmpty(sitePath)){
-            System.err.println("Could not find site for " + request.getResource().getPath());
+            LOG.error("Could not find site for " + request.getResource().getPath());
             return;
         }
 
@@ -70,6 +71,22 @@ public class HomePageController {
     }
 
     public List<BlogPostModel> getBlogPosts(){
-        return blogPosts;
+        if (isEditor()) return blogPosts;
+        else return getPublishedBlogPosts();
     }
+
+    private List<BlogPostModel> getPublishedBlogPosts() {
+        return blogPosts.stream().filter(BlogPostModel::isPublished)
+                .collect(Collectors.toList());
+    }
+
+    public boolean isEditor(){
+        try {
+            return Boolean.valueOf(request.getAttribute("cmsEditEnabled").toString());
+        } catch (Exception e){
+            return false;
+        }
+
+    }
+
 }
