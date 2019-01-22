@@ -1,0 +1,17 @@
+{
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "sling:resourceType": "sling-cms/components/general/container",
+    "image": {
+      "label": "Image",
+      "name": "image",
+      "required": true,
+      "sling:resourceType": "sling-cms/components/editor/fields/path"
+    },
+    "caption": {
+      "label": "Caption",
+      "name": "caption",
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
+    }
+  }
+}

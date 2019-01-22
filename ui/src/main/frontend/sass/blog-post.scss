@@ -40,4 +40,16 @@
     background-color: white;
     padding: 1%;
   }
+
+  .image{
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+    }
+  }
 }

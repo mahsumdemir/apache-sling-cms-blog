@@ -12,8 +12,8 @@
   },
   "static": {
     "jcr:primaryType": "sling:Mapping",
-    "sling:match": "static/clientlibs/blog/(.+)",
-    "sling:internalRedirect": "/static/clientlibs/blog/$1"
+    "sling:match": "static/(.+)",
+    "sling:internalRedirect": "/static/$1"
   },
   "externalization": {
     "jcr:primaryType": "sling:Mapping",
