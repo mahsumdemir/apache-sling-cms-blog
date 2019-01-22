@@ -181,6 +181,9 @@
                 <configuration>
                     <instructions>
                         <Import-Package>
+                            !com.sun.imageio.plugins.png,
+                            !org.apache.tools.ant,
+                            !org.apache.tools.ant.types,
                             *
                         </Import-Package>
                         <Sling-Model-Packages>

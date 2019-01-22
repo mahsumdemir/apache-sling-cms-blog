@@ -1,0 +1,12 @@
+{
+  "sling:resourceType": "sling-cms/components/editor/slingform",
+  "fields": {
+    "sling:resourceType": "sling-cms/components/general/container",
+    "script": {
+      "label": "Script",
+      "name": "script",
+      "required": false,
+      "sling:resourceType": "sling-cms/components/editor/fields/textarea"
+    }
+  }
+}
