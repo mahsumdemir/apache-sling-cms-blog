@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="core-1.0-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.mahsumdemir.blog.core" bundleVersion="1.0.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="com.mahsumdemir.blog - blog" />
+          <property key="Import-Package" value="!com.sun.imageio.plugins.png,!org.apache.tools.ant,!org.apache.tools.ant.types,*" />
+          <property key="Embed-Dependency" value="plantuml" />
+          <property key="Embed-Transitivy" value="true" />
+          <property key="Sling-Model-Packages" value="com.mahsumdemir.sling.blog" />
+          <property key="Sling-Initial-Content" value="initial-content/apps/blog;overwrite:=true;uninstall:=true;path:=/apps/blog,initial-content/conf/blog;overwrite:=true;uninstall:=true;path:=/conf/blog,initial-content/etc/map/http/blog.mahsumdemir.com.json;overwrite:=true;uninstall:=true;path:=/etc/map/http" />
+          <property key="Bundle-Name" value="core" />
+          <property key="Bundle-ClassPath" value=".,plantuml-1.2019.0.jar" />
+          <property key="Include-Resource" value="plantuml-1.2019.0.jar=$MAVEN_REPOSITORY$/net/sourceforge/plantuml/plantuml/1.2019.0/plantuml-1.2019.0.jar" />
+          <property key="Embedded-Artifacts" value="plantuml-1.2019.0.jar;g=&quot;net.sourceforge.plantuml&quot;;a=&quot;plantuml&quot;;v=&quot;1.2019.0&quot;" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/htl" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.compendium:4.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.core:4.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.jcr:jcr:2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.api:2.9.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.adapter:2.1.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.models.api:1.3.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.annotation.versioning:1.0.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.service.component.annotations:1.3.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.osgi:org.osgi.service.metatype.annotations:1.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.sling:org.apache.sling.scripting.api:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Maven: net.sourceforge.plantuml:plantuml:1.2019.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.models.impl:1.4.10" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.jcr.contentloader:2.2.6" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.jackrabbit:jackrabbit-jcr-commons:2.2.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.scripting.sightly:1.1.0-1.4.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.scripting.sightly.runtime:1.0.0-1.4.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.sling:org.apache.sling.jcr.resource:3.0.16" level="project" />
+  </component>
+</module>

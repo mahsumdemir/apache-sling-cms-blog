@@ -42,6 +42,7 @@
   }
 
   .image{
+    overflow: scroll;
     img{
       display: block;
       margin: 0 auto;
@@ -50,6 +51,14 @@
     .caption {
       text-align: center;
       font-style: italic;
+    }
+  }
+
+  .diagram {
+    overflow: scroll;
+    svg {
+      display: block;
+      margin: 0 auto;
     }
   }
 }

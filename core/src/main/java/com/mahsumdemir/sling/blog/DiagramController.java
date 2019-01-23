@@ -7,6 +7,7 @@ import net.sourceforge.plantuml.core.DiagramDescription;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -22,6 +23,9 @@ public class DiagramController {
     private DiagramModel model;
     private String svg;
 
+    @OSGiService
+    private DiagramProvider diagramProvider;
+
     @Inject
     public DiagramController(SlingHttpServletRequest request, SlingHttpServletResponse response){
         this.request = request;
@@ -31,18 +35,7 @@ public class DiagramController {
     @PostConstruct
     public void postConstruct() throws IOException {
         model = request.getResource().adaptTo(DiagramModel.class);
-        generateSvg();
-    }
-
-    private void generateSvg() throws IOException {
-        if (model.getScript() == null) return;
-
-        SourceStringReader reader = new SourceStringReader(model.getScript());
-        final ByteArrayOutputStream os = new ByteArrayOutputStream();
-        DiagramDescription des = reader.outputImage(os, new FileFormatOption(FileFormat.SVG));
-        os.close();
-
-        svg = new String(os.toByteArray(), Charset.forName("UTF-8"));
+        svg = diagramProvider.getSvg(model.getScript());
     }
 
     public String getSvg(){
