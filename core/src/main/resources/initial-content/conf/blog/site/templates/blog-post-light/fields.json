@@ -1,0 +1,19 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "title": {
+    "jcr:primaryType": "nt:unstructured",
+    "required": true,
+    "name": "title",
+    "type": "text",
+    "label": "Title",
+    "sling:resourceType": "sling-cms/components/editor/fields/text"
+  },
+  "name": {
+    "jcr:primaryType": "nt:unstructured",
+    "required": true,
+    "name": ":name",
+    "type": "text",
+    "label": "Name",
+    "sling:resourceType": "sling-cms/components/editor/fields/text"
+  }
+}

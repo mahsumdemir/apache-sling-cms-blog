@@ -1,0 +1,11 @@
+{
+  "sling:resourceType": "sling-cms/components/cms/pagetemplate",
+  "jcr:title": "Blog post page template (Light theme)",
+  "allowedPaths": [
+    "/content/blog/blog-mahsumdemir-com.*"
+  ],
+  "availableComponentTypes": [
+    "Blog"
+  ],
+  "template": "{\r\n  \"jcr:primaryType\": \"sling:Page\",\r\n  \"jcr:content\": {\r\n    \"jcr:primaryType\": \"nt:unstructured\",\r\n    \"title\": \"{{title}}\",\r\n    \"sling:template\": \"/conf/blog/site/templates/blog-post-light\",\r\n    \"sling:resourceType\": \"blog/pages/blog-post-light\",\r\n    \"published\": false\r\n }\r\n}"
+}
