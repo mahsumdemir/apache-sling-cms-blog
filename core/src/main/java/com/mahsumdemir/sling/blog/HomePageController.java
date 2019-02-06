@@ -21,6 +21,7 @@ public class HomePageController {
     private final SlingHttpServletRequest request;
     private final SlingHttpServletResponse response;
     private List<BlogPostModel> blogPosts = new ArrayList<BlogPostModel>();
+    private List<BlogPostLightModel> lightPosts = new ArrayList<>();
 
     @Inject
     public HomePageController(SlingHttpServletRequest request, SlingHttpServletResponse response){
@@ -31,6 +32,27 @@ public class HomePageController {
     @PostConstruct
     public void postConstruct(){
         initializeBlogPostComponents();
+        initializeLightBlogPostComponents();
+    }
+
+    private void initializeLightBlogPostComponents() {
+        String sitePath = getSitePath(request.getResource());
+        if (StringUtils.isEmpty(sitePath)){
+            LOG.error("Could not find site for " + request.getResource().getPath());
+            return;
+        }
+
+        Iterator<Resource> resourceIterator = request.getResourceResolver()
+                .findResources(String.format("/jcr:root%s//*[sling:resourceType=\"%s\"]", sitePath,
+                        Constants.ResourceTypes.BLOG_POST_LIGHT), "xpath");
+        while (resourceIterator.hasNext()){
+            Resource page = resourceIterator.next();
+            BlogPostLightModel blogPostModel = page.adaptTo(BlogPostLightModel.class);
+            if (blogPostModel == null) continue;
+            blogPostModel.setPageUrl(findBlogPostUrl(page));
+            lightPosts.add(blogPostModel);
+        }
+
     }
 
     private void initializeBlogPostComponents() {
@@ -77,6 +99,16 @@ public class HomePageController {
 
     private List<BlogPostModel> getPublishedBlogPosts() {
         return blogPosts.stream().filter(BlogPostModel::isPublished)
+                .collect(Collectors.toList());
+    }
+
+    public List<BlogPostLightModel> getLightPosts(){
+        if (isEditor()) return lightPosts;
+        else return getPublishedLightPosts();
+    }
+
+    private List<BlogPostLightModel> getPublishedLightPosts(){
+        return lightPosts.stream().filter(BlogPostLightModel::isPublished)
                 .collect(Collectors.toList());
     }
 

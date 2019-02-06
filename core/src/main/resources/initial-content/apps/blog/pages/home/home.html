@@ -36,6 +36,16 @@
             </div>
         </sly>
 
+        <sly data-sly-use.controller="com.mahsumdemir.sling.blog.HomePageController" data-sly-list="${controller.lightPosts}">
+            <div class="blog-post-card">
+                <img class="background-image" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="blog post image"/>
+                <a class="title" href="${item.pageUrl}">
+                    <span>${item.title}</span>
+                </a>
+            </div>
+        </sly>
+
+
         <sly data-sly-include="${'/libs/sling-cms/components/editor/scripts/finalize.jsp'}"/>
     </body>
 </html>
