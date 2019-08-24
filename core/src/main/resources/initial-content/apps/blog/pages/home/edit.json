@@ -9,6 +9,13 @@
       "name": "title",
       "required": "true",
       "sling:resourceType": "sling-cms/components/editor/fields/text"
+    },
+    "description": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Description",
+      "name": "description",
+      "required": "false",
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
     }
   }
 }
