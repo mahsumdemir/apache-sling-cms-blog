@@ -1,3 +1,6 @@
 <div data-sly-use.controller="com.mahsumdemir.sling.blog.DiagramController" data-component="diagram" class="diagram" >
-    ${controller.svg}
+    <div class="card">
+        ${controller.svg}
+        <p class="description">${properties.description}</p>
+    </div>
 </div>
