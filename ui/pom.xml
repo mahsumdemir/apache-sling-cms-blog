@@ -70,6 +70,7 @@
                     <instructions>
                         <Sling-Initial-Content>
                             inital-content/static/clientlibs/blog;overwrite=true;ignoreImportProviders:=xml;path:=/static/clientlibs/blog
+                            inital-content/static/seo/blog.mahsumdemir.com;overwrite=true;ignoreImportProviders:=xml;path:=/static/seo/blog.mahsumdemir.com
                         </Sling-Initial-Content>
                     </instructions>
                 </configuration>

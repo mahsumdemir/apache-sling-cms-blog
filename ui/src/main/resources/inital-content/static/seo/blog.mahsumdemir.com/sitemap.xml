@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+<url>
+    <loc>https://blog.mahsumdemir.com/bulding-my-blog/apache-sling-cms.html</loc>
+    <lastmod>2019-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+
+<url>
+    <loc>https://blog.mahsumdemir.com/integrating-aws-sdk.html</loc>
+    <lastmod>2019-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+
+<url>
+    <loc>https://blog.mahsumdemir.com/aem/finding-extention-points.html</loc>
+    <lastmod>2019-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+</urlset>
