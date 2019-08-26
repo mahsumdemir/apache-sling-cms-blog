@@ -1,5 +1,10 @@
-.blog-post {
+.blog-post-light {
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  margin: 0 10px;
+  font-size: 23px;
+  line-height: 150%;
+  letter-spacing: 1.2px;
 
   .prettyprint {
     overflow: scroll;
@@ -9,37 +14,6 @@
     .linenums li {
       list-style-type: decimal;
     }
-  }
-
-  .background-image {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .title {
-    text-align: center;
-    position: relative;
-    margin-top: 10%;
-    width: 80%;
-    padding: 0 10%;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 50px;
-  }
-
-  .blog-content {
-    position: relative;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    width: 80%;
-    margin: 10% 10% 4%;
-    background-color: white;
-    padding: 1%;
-    text-align: justify;
   }
 
   .image{
@@ -54,30 +28,34 @@
       font-style: italic;
     }
   }
-}
 
-.blog-post-light {
-  text-align: justify;
-  margin: 0 10px;
-}
+  .diagram{
+    display: flex;
+    margin: 20px 0;
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      display: inline-block;
+      padding: 10px;
+      margin: 0 auto;
+      overflow: auto;
+    }
 
-.diagram{
-  display: flex;
-  margin: 20px 0;
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: inline-block;
-    padding: 10px;
-    margin: 0 auto;
-    overflow: auto;
+    .description {
+      font-style: italic;
+      font-size: 15px;
+      text-align: center;
+    }
+
   }
 
-  .description {
-    font-style: italic;
-    font-size: 15px;
+  .image {
     text-align: center;
-  }
+    justify-content: center;
 
-  svg{
+    .caption {
+      font-size: 15px;
+      font-style: italic;
+    }
   }
 }
+

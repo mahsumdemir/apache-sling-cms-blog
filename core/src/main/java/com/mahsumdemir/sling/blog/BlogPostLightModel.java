@@ -13,6 +13,9 @@ public class BlogPostLightModel {
     @Inject
     private String title;
 
+    @Inject
+    private String backgroundImage;
+
     private String pageUrl;
 
     public Boolean isPublished() {
@@ -29,5 +32,9 @@ public class BlogPostLightModel {
 
     public String getPageUrl(){
         return pageUrl;
+    }
+
+    public String getBackgroundImage() {
+        return backgroundImage;
     }
 }

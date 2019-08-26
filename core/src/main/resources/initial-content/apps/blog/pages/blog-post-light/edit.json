@@ -17,6 +17,13 @@
       "required": "false",
       "sling:resourceType": "sling-cms/components/editor/fields/text"
     },
+    "backgroundImage": {
+      "jcr:primaryType": "nt:unstructured",
+      "label": "Background Image",
+      "name": "backgroundImage",
+      "required": "false",
+      "sling:resourceType": "sling-cms/components/editor/fields/text"
+    },
     "published": {
       "jcr:primaryType": "nt:unstructured",
       "label": "Published",
