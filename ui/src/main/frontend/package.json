@@ -10,6 +10,6 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   }
 }
